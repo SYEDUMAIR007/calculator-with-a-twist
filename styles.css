@@ -255,10 +255,7 @@ button {
     box-shadow: 0px 3px 0px 0px var(--T3-Equal-modeSwitch-key-shadow);
 
 }
-.animation{
-    transition: transform 0.1s linear;
-    transform: translatez(50px);
-}
+
 #resetbtn {
     grid-column: span 2;
 }
@@ -269,12 +266,15 @@ button {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 20px;
     text-align: center;
+    color:hsl(224, 36%, 15%) ;
+    margin-top: 10px;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(28, 16%, 65%);
+    text-decoration: none;
 }
 
 @media(min-width:425px) {
