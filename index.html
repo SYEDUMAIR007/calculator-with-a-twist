@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>calc</h1>
+
+      <div class="themeSwitch">
+        <small class="themeHeading">THEME</small>
+        <div id="outerContainer">
+          <div id="buttonContainer">
+              <div class="redButton"></div>
+          </div>
+  
+         <div id="legendTextContainer">
+           <div class="legendText" id="bluemode">1</div>              
+           <div class="legendText"id="lightmode">2</div>
+           <div class="legendText"id="violetmode">3</div>
+         </div>
+      </div>
+      </div>
+    </header>
+
+    <input type="text" name="inputScreen" id="inputScreen">
+
+    <div class="buttonHolder"> 
+      <button value="7" value="OFF" class="numbers bluetheme-allbtn">7</button>
+      <button value="8" class="numbers bluetheme-allbtn">8</button>
+      <button value="9" class="numbers bluetheme-allbtn">9</button>
+      <button class="funcButtons bluetheme-funcbtn" id="deletebtn">DEL</button>
+      <button value="4" class="numbers bluetheme-allbtn">4</button>
+      <button value="5" class="numbers bluetheme-allbtn">5</button>
+      <button value="6" class="numbers bluetheme-allbtn">6</button>
+      <button value="+" class="operators bluetheme-allbtn">+</button>
+      <button value="1" class="numbers bluetheme-allbtn">1</button>
+      <button value="2" class="numbers bluetheme-allbtn">2</button>
+      <button value="3" class="numbers bluetheme-allbtn">3</button>
+      <button value="-" class="operators bluetheme-allbtn">-</button>
+      <button value="." class="numbers bluetheme-allbtn">.</button>
+      <button value="0" class="numbers bluetheme-allbtn">0</button>
+      <button value="/" class="operators bluetheme-allbtn">/</button>
+      <button value="*" class="operators bluetheme-allbtn">x</button>
+      <button class="funcButtons bluetheme-funcbtn " id="resetbtn">RESET</button>
+      <button value="=" class="operators endbtn bluetheme-endbtn" id="equalbtn">=</button>
+      <button value="%" class="operators endbtn bluetheme-endbtn" id="percentagebtn">%</button>
+    </div>
+
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Syed Umair</a>.
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

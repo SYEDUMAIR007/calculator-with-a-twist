@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+:root {
+    /* Theme 1 colors */
+    --T1-main-background: hsl(222, 26%, 31%);
+    --T1-toggle-keypadbackground: hsl(223, 31%, 20%);
+    --T1-screenbackground: hsl(224, 36%, 15%);
+
+    --T1-Reset-del-keybackground: hsl(225, 21%, 49%);
+    --T1-Reset-del-key-shadow: hsl(224, 28%, 35%);
+
+    --T1-Equal-modeSwitch-keybackground-toggle: hsl(6, 63%, 50%);
+    --T1-Equal-modeSwitch-key-shadow: hsl(6, 70%, 34%);
+
+    --T1-digit-keybackground: hsl(30, 25%, 89%);
+    --T1-digit-key-shadow: hsl(28, 16%, 65%);
+
+    --T1-digit-text: hsl(221, 14%, 31%);
+    --T1-func-head-text: hsl(0, 0%, 100%);
+
+    /* Theme 2 colors*/
+    --T2-main-background: hsl(0, 0%, 90%);
+    --T2-toggle-keypadbackground: hsl(0, 5%, 81%);
+    --T2-screenbackground: hsl(0, 0%, 93%);
+
+    --T2-Reset-del-keybackground: hsl(185, 42%, 37%);
+    --T2-Reset-del-key-shadow: hsl(185, 58%, 25%);
+
+    --T2-Equal-modeSwitch-keybackground-toggle: hsl(25, 98%, 40%);
+    --T2-Equal-modeSwitch-key-shadow: hsl(25, 99%, 27%);
+
+    --T2-digit-keybackground: hsl(45, 7%, 89%);
+    --T2-digit-key-shadow: hsl(35, 11%, 61%);
+
+    --T2-digit-head-text: hsl(60, 10%, 19%);
+    --T2-func-text: hsl(0, 0%, 100%);
+
+    /* Theme 3 colors*/
+    --T3-main-background: hsl(268, 75%, 9%);
+    --T3-toggle-keypad-screenbackground: hsl(268, 71%, 12%);
+
+    --T3-Reset-del-keybackground: hsl(281, 89%, 26%);
+    --T3-Reset-del-key-shadow: hsl(285, 91%, 52%);
+
+    --T3-Equal-modeSwitch-keybackground-toggle: hsl(176, 100%, 44%);
+    --T3-Equal-modeSwitch-key-shadow: hsl(177, 92%, 70%);
+
+    --T3-digit-keybackground: hsl(268, 47%, 21%);
+    --T3-digit-key-shadow: hsl(290, 70%, 36%);
+
+    --T3-Equal-key-text: hsl(198, 20%, 13%);
+    --T3-digit-head-text: hsl(52, 100%, 62%);
+    --T3-func-text: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--T1-main-background);
+}
+main {
+    margin: 0 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    margin-top: 38px;
+    color: var(--T1-func-head-text);
+}
+
+h1 {
+    display: inline;
+    margin-right: 126px;
+}
+
+.themeSwitch {
+    display: grid;
+    grid-template-columns: 45px 75px;
+    margin-top: 14px;
+}
+
+.themeHeading {
+    margin-top: 28px;
+}
+
+.redButton.horizTranslate2 {
+    transition: transform 0.1s linear; 
+    transform: translateX(20px);
+  }
+
+  .redButton.horizTranslate3 { 
+    transition: transform 0.1s linear; 
+    transform: translateX(40px);}
+  .redButton.horizTranslate1 { 
+    transition: -webkit-transform 0.1s linear;
+    transform: translateX(0px);
+}
+  #outerContainer{
+    position:relative; 
+    width:111px;
+    height:98px; 
+    top: -30px;
+  }
+  #buttonContainer{
+    width:71px; 
+    height:28px; 
+    position:relative; 
+    left:20px; 
+    top:45px; 
+    border-radius:14px;
+    background-color: var(--T1-toggle-keypadbackground);
+}
+  .redButton{
+    width:16px; 
+    height:16px; 
+    border-radius:8px; 
+    position:relative; 
+    top:6px; 
+    left:6px;
+    background-color: var(--T1-Equal-modeSwitch-keybackground-toggle);
+  }
+  #legendTextContainer{
+    left:22px; 
+    display:inline-block;
+    position:absolute; 
+    top:23px; 
+    font-size:10pt;
+    text-align:center;
+  }
+  .legendText{
+    display:inline-block;
+    width:20px; 
+    padding-bottom:33px; 
+    cursor:default; 
+    user-select: none;
+}
+#inputScreen {
+    padding: 10px;
+    border-radius: 8px;
+    width: 310px;
+    height: 88px;
+    text-align: end;
+    font-size: 32px;
+    font-weight: 700;
+    border: none;
+    background-color: var(--T1-screenbackground);
+    color: var(--T1-func-head-text);
+}
+
+.buttonHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 24px;
+    gap: 13px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+    border-radius: 11px;
+    background-color: var(--T1-toggle-keypadbackground);
+}
+
+button {
+    padding: 21px;
+    border-radius: 5px;
+    border: none;
+    font-size: 32px;
+    min-width: 60px;
+    height: 61px;
+    text-align: center;
+    cursor: pointer;
+}
+.bluetheme-allbtn{
+    background-color:var(--T1-digit-keybackground);
+    color: var(--T1-digit-text);
+    box-shadow: 0px 5px 0px 0px var(--T1-digit-key-shadow);
+}
+.bluetheme-allbtn:active{
+    background-color: var(--T1-func-head-text);
+    box-shadow: 0px 3px 0px 0px var(--T1-digit-key-shadow);
+}
+.bluetheme-funcbtn{
+    background-color:var(--T1-Reset-del-keybackground);
+    color: var(--T1-func-head-text);
+    box-shadow: 0px 5px 0px 0px var(--T1-Reset-del-key-shadow);
+}
+.bluetheme-funcbtn:active{
+    background-color: #A2B3E1;
+    box-shadow: 0px 3px 0px 0px var(--T1-Reset-del-key-shadow);
+}
+.bluetheme-endbtn{
+    background-color:var(--T1-Equal-modeSwitch-keybackground-toggle);
+    color: var(--T1-func-head-text);
+    box-shadow: 0px 5px 0px 0px var(--T1-Equal-modeSwitch-key-shadow);
+}
+.bluetheme-endbtn:active{
+    background-color: #F96C5B;
+    box-shadow: 0px 3px 0px 0px var(--T1-Equal-modeSwitch-key-shadow);
+}
+.lighttheme-allbtn{
+    background-color:var(--T2-digit-keybackground);
+    color: var(--T2-digit-head-text);
+    box-shadow: 0px 5px 0px 0px var(--T2-digit-key-shadow);
+}
+.lighttheme-allbtn:active{
+    background-color: var(--T1-func-head-text);
+    box-shadow: 0px 3px 0px 0px var(--T2-digit-key-shadow);
+}
+.lighttheme-funcbtn{
+    background-color:var(--T2-Reset-del-keybackground);
+    color: var(--T2-func-text);
+    box-shadow: 0px 5px 0px 0px var(--T2-Reset-del-key-shadow);
+}
+.lighttheme-funcbtn:active{
+    background-color: #62B5BD;
+    box-shadow: 0px 3px 0px 0px var(--T2-Reset-del-key-shadow);
+}
+.lighttheme-endbtn{
+    background-color: var(--T2-Equal-modeSwitch-keybackground-toggle);
+    color: var(--T2-func-text);
+    box-shadow: 0px 5px 0px 0px var(--T2-Equal-modeSwitch-key-shadow);
+}
+.lighttheme-endbtn:active{
+    background-color: #FF8B38;
+    box-shadow: 0px 3px 0px 0px var(--T2-Equal-modeSwitch-key-shadow);
+}
+.violettheme-allbtn{
+    background-color:var(--T3-digit-keybackground);
+    color: var(--T3-digit-head-text);
+    box-shadow: 0px 5px 0px 0px var(--T3-digit-key-shadow);
+}
+.violettheme-allbtn:active{
+    background-color: #6B34AC;
+    box-shadow: 0px 3px 0px 0px var(--T3-digit-key-shadow);
+}
+.violettheme-funcbtn{
+    background-color:var(--T3-Reset-del-keybackground);
+    color: var(--T3-func-text);
+    box-shadow: 0px 5px 0px 0px var(--T3-Reset-del-key-shadow);
+}
+.violettheme-funcbtn:active{
+    background-color: #8631B0;
+    box-shadow: 0px 3px 0px 0px var(--T3-Reset-del-key-shadow);
+}
+.violettheme-endbtn{
+    background-color:var(--T3-Equal-modeSwitch-keybackground-toggle);
+    color: var(--T3-Equal-key-text);
+    box-shadow: 0px 5px 0px 0px var(--T3-Equal-modeSwitch-key-shadow);
+}
+.violettheme-endbtn:active{
+    background-color: #94FFF9;
+    box-shadow: 0px 3px 0px 0px var(--T3-Equal-modeSwitch-key-shadow);
+
+}
+.animation{
+    transition: transform 0.1s linear;
+    transform: translatez(50px);
+}
+#resetbtn {
+    grid-column: span 2;
+}
+
+.funcButtons {
+    font-size: 20px;
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:425px) {
+    #inputScreen {
+        width: 340px;
+    }
+    h1{
+        padding-right: 50px;
+    }
+    #outerContainer{
+        position:relative; 
+        left: -10px;
+        height:98px; 
+        top: -30px;
+        margin-left: 26px;
+      }
+      .themeSwitch{
+        margin-right: 26px;
+      }
+}
+@media(min-width:448px) {
+    #inputScreen {
+        width: 365px;
+    }
+}
+@media(min-width:768px) {
+    #inputScreen {
+        width: 525px;
+    }
+    .buttonHolder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 32px;
+        gap: 25px;
+        margin-top: 23px;
+        margin-bottom: 10px;
+        border-radius: 11px;
+    }
+    
+    button {
+        padding: 21px;
+        border-radius: 5px;
+        border: none;
+        font-size: 32px;
+        min-width: 101px;
+        height: 60px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    
+    #resetbtn {
+        grid-column: span 2;
+    }
+    h1{
+        margin-right: 285px;
+    }
+}
+
