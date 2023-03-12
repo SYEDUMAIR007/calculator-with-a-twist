@@ -139,6 +139,9 @@ h1 {
     cursor:default; 
     user-select: none;
 }
+label>small{
+    display: none;
+}
 #inputScreen {
     padding: 10px;
     border-radius: 8px;
