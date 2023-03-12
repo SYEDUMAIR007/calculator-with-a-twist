@@ -18,6 +18,8 @@ const toggleSwitch=document.querySelector(".redButton");
 const blueMode=document.querySelector("#bluemode");
 const lightMode=document.querySelector("#lightmode");
 const violetMode=document.querySelector("#violetmode");
+const attribution = document.querySelector(".attribution");
+const anchor =document.querySelectorAll(".attribution a");
 let currentInput =0;
 let firstNumber = null;
 let operator = null;
@@ -49,6 +51,8 @@ violetMode.addEventListener('click',go_to_3);
             toggleSwitch.classList.add('horizTranslate1');
             toggleSwitch.classList.remove('horizTranslate2');
             toggleSwitch.classList.remove('horizTranslate3');
+            attribution.style.color="hsl(224, 36%, 15%)";
+            anchor.forEach(a=>{a.style.color="hsl(28, 16%, 65%)"});
             allButtons.forEach(button=>{
               button.classList.add('bluetheme-allbtn');
               button.classList.remove('lighttheme-allbtn');
@@ -77,6 +81,8 @@ violetMode.addEventListener('click',go_to_3);
             toggleSwitch.classList.add('horizTranslate2');
             toggleSwitch.classList.remove('horizTranslate3');
             toggleSwitch.classList.remove('horizTranslate1');
+            attribution.style.color="hsl(185, 42%, 37%)";
+            anchor.forEach(a=>{a.style.color="hsl(25, 98%, 40%)"});
             allButtons.forEach(button=>{
               button.classList.add('lighttheme-allbtn');
               button.classList.remove('bluetheme-allbtn');
@@ -105,6 +111,8 @@ violetMode.addEventListener('click',go_to_3);
             toggleSwitch.classList.add('horizTranslate3');
             toggleSwitch.classList.remove('horizTranslate2');
             toggleSwitch.classList.remove('horizTranslate1');
+            attribution.style.color="hsl(52, 100%, 62%)";
+            anchor.forEach(a=>{a.style.color="hsl(176, 100%, 44%)"});
             allButtons.forEach(button=>{
               button.classList.add('violettheme-allbtn');
               button.classList.remove('bluetheme-allbtn');
@@ -244,6 +252,3 @@ function deleting(){
     inputScreen.value=currentInput
    
 }
-   
-
-
