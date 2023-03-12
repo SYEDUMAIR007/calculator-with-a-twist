@@ -20,7 +20,7 @@ const lightMode=document.querySelector("#lightmode");
 const violetMode=document.querySelector("#violetmode");
 const attribution = document.querySelector(".attribution");
 const anchor =document.querySelectorAll(".attribution a");
-let currentInput =0;
+let currentInput ='';
 let firstNumber = null;
 let operator = null;
 
